@@ -31,6 +31,7 @@
   import { ref } from 'vue';
   
   const studies = ref([
+    { title: 'ESIEA - Computer Engineering program', date: '2025 - 2028' },
     { title: 'ENSITECH - BTS SIO SLAM', date: '2023 - 2025' },
   ]);
   

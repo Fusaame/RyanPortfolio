@@ -14,9 +14,9 @@
       <!-- Texte (ajusté pour mobile) -->
       <div class="max-w-2xl mr-0 lg:mr-24 text-center lg:text-left">
         <!-- Titre avec bordure en dessous -->
-        <h2 class="font-eczar text-2xl lg:text-3xl text-black mb-6 text-center border-b-2 border-gray-300 pb-2">Ryan, 24 years old</h2>
+        <h2 class="font-eczar text-2xl lg:text-3xl text-black mb-6 text-center border-b-2 border-gray-300 pb-2">Ryan, 25 years old</h2>
         <p class="text-lg text-black leading-relaxed">
-          I am currently a student in BTS SIO with a focus on software development (SLAM). I am passionate about coding and development, with a strong desire to become a software engineer and tackle innovative technological challenges.
+          I am currently a student in BTS SIO with a focus on software development (SLAM). I am passionate about coding and development, with a strong desire to become a computer engineer and tackle innovative technological challenges.
         </p>
         
         <!-- Bouton pour télécharger un fichier -->

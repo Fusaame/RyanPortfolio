@@ -18,5 +18,4 @@ import Separation from './SectionSeparation.vue';
 </template>
 
 <style>
-
 </style>
