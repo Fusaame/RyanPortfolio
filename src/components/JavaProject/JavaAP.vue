@@ -9,6 +9,15 @@
         Nous avions comme mission de créer une application pour une bibliothèque Book&You pour pouvoir gérer l'emprunt et le rendu des livres.
       </p>
 
+      <div class="flex justify-center mt-6">
+        <button 
+          @click="AnnexeAP2PDF"
+          class="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 mb-4"
+        >
+          📄 Annexe 9.1
+        </button>
+      </div>
+
       <!-- Section Bases de Données -->
       <div class="mb-12">
         <h2 class="text-3xl font-semibold text-center text-black mb-4">Base de Données : AP2</h2>
@@ -68,6 +77,9 @@
 </template>
 
 <script setup>
+const AnnexeAP2PDF = () => {
+  window.open('/AP2.pdf', '_blank'); // Ouvre le PDF dans un nouvel onglet
+};
 </script>
 
 <style scoped>

@@ -47,9 +47,8 @@
         
         <!-- Bouton Resume -->
         <a
-          href="/CV.pdf" 
-          download 
-          class="relative p-4 px-6 bg-white text-black rounded-2xl transform transition duration-300 hover:scale-105 hover:shadow-lg border border-black before:absolute before:inset-0 before:border-2 before:border-black before:rounded-xl"
+          @click.prevent="openResume"
+          class="relative p-4 px-6 bg-white text-black rounded-2xl transform transition duration-300 hover:scale-105 hover:shadow-lg border border-black before:absolute before:inset-0 before:border-2 before:border-black before:rounded-xl cursor-pointer"
         >
           Resume
         </a>
@@ -66,6 +65,10 @@ import { ref, onMounted, onUnmounted } from 'vue';
 
 const isScrolled = ref(false);
 const menuOpen = ref(false);
+
+const openResume = () => {
+  window.open('/CVRyan.pdf', '_blank'); // Ouvre le fichier en nouvel onglet
+};
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50;

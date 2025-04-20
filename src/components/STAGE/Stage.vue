@@ -9,18 +9,15 @@
         Nous avions comme mission de créer un site de stage consultable par les élèves pour qu'ils puissent rentrer chaque jour le compte-rendu de leur journée en entreprise.
       </p>
 
-      <!-- Missions -->
-      <div class="mb-8">
-        <h2 class="text-2xl font-semibold text-black mb-4">Voici les missions données par notre professeur</h2>
-        <ul class="list-disc pl-6 space-y-2">
-          <li>AP1.1 => conf.php -> Connexion BDD :: 4/10</li>
-          <li>AP1.2 => oublie MDP envoie mail :: 4/10</li>
-          <li>AP1.3 => sécuriser les MDP / donc faire un hachage :: 11/10</li>
-          <li>AP1.4 => Connexion Prof/Eleve :: 18/10</li>
-          <li>AP1.5 => Page d’accueil pour un élève + variable de session :: 25/10</li>
-          <li>AP1.6 => Compte-rendu des élèves :: 15/11/2024</li>
-        </ul>
-      </div>
+      <div class="flex justify-center mt-6">
+        <button 
+          @click="AnnexeAP1PDF"
+          class="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 mb-4"
+        >
+          📄 Annexe 9.1
+        </button>
+    </div>
+
 
       <!-- Section Bases de Données -->
       <div class="mb-12">
@@ -96,6 +93,9 @@
 </template>
 
 <script setup>
+const AnnexeAP1PDF = () => {
+  window.open('/AP1.pdf', '_blank'); // Ouvre le PDF dans un nouvel onglet
+};
 </script>
 
 <style scoped>
