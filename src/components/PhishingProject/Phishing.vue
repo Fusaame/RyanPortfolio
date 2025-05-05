@@ -1,17 +1,18 @@
 <template>
-    <div class="pt-32 px-6 lg:px-20 bg-gray-50 text-gray-800 font-eczar">
+    <div class="pt-32 pb-24 px-6 min-h-screen flex flex-col justify-center items-center bg-[#fdfaf6] relative">
       <!-- Titre Principal -->
-      <h1 class="text-5xl font-bold text-center mb-12">PHISHING CAMPAIGN</h1>
+      <h1 class="text-5xl font-bold text-center mb-8">PHISHING CAMPAIGN</h1>
+      <div class="border-t-4 border-blue-400 w-24 mx-auto mb-8"></div>
       
       <!-- Introduction -->
       <p class="text-lg text-center mb-12">
-        Nous avions comme mission de chercher une entreprise : Mon choix s'est tourné vers 
-        <span class="text-red-600 font-semibold">RIOT Games</span>, pour ensuite récupérer ses accès.
+        Nous avions pour mission de chercher une entreprise : Mon choix s'est tourné vers 
+        <span class="text-red-600 font-semibold">RIOT Games</span>, pour ensuite récupérer les accès et les codes bancaires des joueurs qui seront pris dans mon piège.
       </p>
       
       <!-- Section Bases de Données -->
       <div class="mb-16">
-        <h2 class="text-3xl font-semibold mb-6 text-center">Base de Données : PHISHIING</h2>
+        <h2 class="text-3xl font-semibold mb-6 text-center">Base de Données : PHISHING</h2>
         <p class="text-lg text-center mb-8">Commençons par mes deux tables qui récupéreront les informations :</p>
         <div class="flex flex-col md:flex-row items-center justify-center gap-8">
           <img src="./img_phishing/bddUser.png" alt="bddUser" class="w-full md:w-1/2 lg:w-1/3 rounded-lg shadow-lg">

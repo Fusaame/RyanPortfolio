@@ -1,5 +1,5 @@
 <script setup>
-import Navbar from './Navbar2.vue';
+import Navbar from './Navbar3.vue';
 import Glpi from './GLPI/Glpi.vue';
 import Contact from './Contact.vue';
 import { onMounted } from 'vue';

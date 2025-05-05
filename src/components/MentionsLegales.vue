@@ -10,7 +10,7 @@
   
       <!-- Pop-up / modale -->
       <div v-if="open" class="fixed inset-0 z-50 flex items-center justify-center bg-white bg-opacity-70">
-        <div class="bg-white rounded-lg shadow-xl p-6 w-full max-w-3xl max-h-[90vh] overflow-y-auto relative text-sm text-black">
+        <div class="bg-white rounded-lg shadow-xl p-6 w-full max-w-xl max-h-[90vh] overflow-y-auto relative text-sm text-black px-6">
           <!-- Bouton de fermeture -->
           <button @click="open = false" class="absolute top-2 right-4 text-gray-400 hover:text-red-500 text-2xl font-bold">&times;</button>
   

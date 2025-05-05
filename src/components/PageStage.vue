@@ -1,5 +1,5 @@
 <script setup>
-import Navbar from './Navbar2.vue';
+import Navbar from './Navbar3.vue';
 import Stage from './STAGE/Stage.vue';
 import Contact from './Contact.vue';
 import { onMounted } from 'vue';

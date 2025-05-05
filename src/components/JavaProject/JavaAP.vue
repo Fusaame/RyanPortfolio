@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-32 px-6 lg:px-20 bg-gray-50 text-gray-800 font-eczar">
+    <div class="pt-32 pb-24 px-6 min-h-screen flex flex-col justify-center items-center bg-[#fdfaf6] relative">
 
       <!-- Titre Principal -->
       <h1 class="text-4xl font-bold text-center text-black mb-8">Application Java : Book&You</h1>
