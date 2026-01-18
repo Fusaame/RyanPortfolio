@@ -167,12 +167,6 @@
           <p class="text-lg font-semibold">C</p>
           <span class="text-sm text-gray-500">Débutant</span>
         </div>
-        <!-- SHELL -->
-        <div class="flex flex-col items-center">
-          <img src="./imgAccueil/icon/Powershell.png" class="w-12 h-12 mb-2" />
-          <p class="text-lg font-semibold">Powershell</p>
-          <span class="text-sm text-gray-500">Débutant</span>
-        </div>
       </div>
     </div>
 
@@ -198,11 +192,11 @@
           <p class="text-lg font-semibold">MacOS</p>
           <span class="text-sm text-gray-500">Bon</span>
         </div>
-        <!-- Markdown -->
+        <!-- SHELL -->
         <div class="flex flex-col items-center">
-          <img src="./imgAccueil/icon/Markdown.png" class="w-12 h-12 mb-2" />
-          <p class="text-lg font-semibold">Markdown</p>
-          <span class="text-sm text-gray-500">A l'aise</span>
+          <img src="./imgAccueil/icon/Powershell.png" class="w-12 h-12 mb-2" />
+          <p class="text-lg font-semibold">Powershell</p>
+          <span class="text-sm text-gray-500">Débutant</span>
         </div>
         <!-- Github -->
         <div class="flex flex-col items-center">

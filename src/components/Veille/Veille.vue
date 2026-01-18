@@ -13,7 +13,7 @@
             <div>
             <h2 class="text-2xl mb-2 text-center font-semibold text-gray-800">Mon sujet</h2>
             <p class="text-gray-700">
-                Cybersécurité des données : Analyser les menaces actuelles et les solutions innovantes pour sécuriser les informations face aux cyberattaques modernes.
+                Cybersécurité des données : Analyser les menaces actuelles et les solutions innovantes pour sécuriser les informations face aux cyberattaques.
             </p>
             </div>
             <div>

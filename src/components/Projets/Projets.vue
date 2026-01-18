@@ -8,7 +8,9 @@
         v-for="(project, index) in projects"
         :key="index"
         class="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-blue-400 hover:scale-105 transition-transform duration-300 relative group"
-        @click="project.title === 'Certification ANSSI' ? showAnssiModal = true : null"
+        @click="project.title === 'Certification ANSSI' ? showAnssiModal = true : 
+        project.title === 'Rainbow Table' ? showRainbowModal = true : null"
+
       >
         <!-- Image projet -->
         <div class="overflow-hidden">
@@ -59,6 +61,35 @@
     </div>
   </section>
 
+  <!-- Modal RAINBOW TABLE -->
+<div
+  v-if="showRainbowModal"
+  class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50"
+>
+  <div class="bg-white rounded-xl shadow-lg max-w-3xl w-full p-6 relative">
+    <button
+      @click="showRainbowModal = false"
+      class="absolute top-3 right-3 text-gray-600 hover:text-red-500 text-xl font-bold"
+    >
+      &times;
+    </button>
+    <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Rainbow Table - Génération de mots de passe</h3>
+
+    <p class="text-gray-700 text-lg leading-relaxed">
+      Ce projet simule une attaque de type Rainbow Table. Il permet de générer une liste de hachages à partir d'une base de mots de passe simples. 
+      L’objectif est de démontrer comment les attaques par pré-calcul peuvent compromettre la sécurité si les mots de passe ne sont pas suffisamment forts ou salés.
+      Les étapes comprennent la génération des mots, leur hachage via une fonction (comme MD5 ou SHA1), et la tentative de récupération d’un mot de passe à partir de son empreinte.
+    </p>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+      <img :src="imgRainbow1" alt="Étape 1" class="w-full h-76 object-contain rounded-md border" />
+      <img :src="imgRainbow2" alt="Étape 2" class="w-full h-76 object-contain rounded-md border" />
+      <img :src="imgRainbow3" alt="Étape 3" class="w-full h-48 object-contain rounded-md border" />
+    </div>
+  </div>
+</div>
+
+
   <!-- Modal ANSSI -->
 <div
   v-if="showAnssiModal"
@@ -87,6 +118,15 @@ import { ref } from 'vue';
 const showAnssiModal = ref(false);
 
 
+// IMAGES RAINBOW
+const showRainbowModal = ref(false);
+
+import imgRainbow1 from "./imgRainbow/CpRainbow.png";
+import imgRainbow2 from "./imgRainbow/CpRainbow2.png";
+import imgRainbow3 from "./imgRainbow/CpRainbow3.png";
+
+
+
 // IMAGE DES PROJETS
 import img from "./imgProject/homePics.JPG";
 import imgJava from "./imgProject/javaimg.webp";
@@ -100,6 +140,7 @@ import imgCyber from "./imgProject/cyberdonnees.webp";
 import imgStage from "./imgProject/accADMIN.png";
 import imgCertif from "./imgProject/anssi1.png";
 import imgAnssi from "./imgProject/anssilogo.webp";
+import imgRainbow from "./imgProject/rainbow.jpg";
 
 
 
@@ -169,6 +210,14 @@ const projects = [
     link: "/phishing",
     isInternal: true,
     technologies: [logoHtml, logoCss, logoPHP, logoSql]
+  },
+  {
+    title: "Rainbow Table",
+    description: "Cyberattack consistant à générer des mots de passe.",
+    image: imgRainbow,
+    link: "",
+    isInternal: true,
+    technologies: [logoPHP, logoSql]
   },
   {
     title: "Certification ANSSI",
